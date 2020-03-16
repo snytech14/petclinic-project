@@ -1,0 +1,11 @@
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/PetclinicIntegrationTests.java
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/owner/PetTypeFormatterTests.java
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/owner/OwnerControllerTests.java
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/owner/VisitControllerTests.java
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/service/ClinicServiceTests.java
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/vet/VetTests.java
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/vet/VetControllerTests.java
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/service/EntityUtils.java
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/system/CrashControllerTests.java
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/owner/PetControllerTests.java
+/home/osgdev/demo/spring-petclinic/src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java
