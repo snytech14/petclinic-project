@@ -9,28 +9,18 @@ Deploy this sample application to Pivotal Web Services: Just for example
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
 ## Running petclinic locally
-Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/). You can build a jar file and run it from the command line:
+Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/). You can build a war file and run it from the command line:
 
 
 ```
 git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
-./mvnw package
-java -jar target/*.jar
+mvn clean package
 ```
 
-You can then access petclinic here: http://localhost:8080/
+You can then access petclinic here in tomcat using war file: http://localhost:8080/"your petclinic Application name"
 
 <img width="1042" alt="petclinic-screenshot" src="https://cloud.githubusercontent.com/assets/838318/19727082/2aee6d6c-9b8e-11e6-81fe-e889a5ddfded.png">
-
-Or you can run it from Maven directly using the Spring Boot Maven plugin. If you do this it will pick up changes that you make in the project immediately (changes to Java source files require a compile as well - most people use an IDE for this):
-
-```
-./mvnw spring-boot:run
-```
-
-## In case you find a bug/suggested improvement for Spring Petclinic
-Our issue tracker is available here: https://github.com/spring-projects/spring-petclinic/issues
 
 
 ## Database configuration
@@ -47,7 +37,7 @@ docker run -e MYSQL_USER=petclinic -e MYSQL_PASSWORD=petclinic -e MYSQL_ROOT_PAS
 
 Further documentation is provided [here](https://github.com/spring-projects/spring-petclinic/blob/master/src/main/resources/db/mysql/petclinic_db_setup_mysql.txt).
 
-## Working with Petclinic in your IDE
+## Steps to convert jar artifact into war in petclinic application:
 
 ### Prerequisites
 The following items should be installed in your system:
