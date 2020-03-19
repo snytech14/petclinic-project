@@ -18,19 +18,26 @@ package org.springframework.samples.petclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 /**
  * PetClinic Spring Boot Application.
  *
- * @author Dave Syer
+ * @author Shachindra
  *
  */
-@SpringBootApplication(proxyBeanMethods = false)
-<span class="fc" id="L29">public class PetClinicApplication {</span>
+@SpringBootApplication
+<span class="fc" id="L31">public class PetClinicApplication extends SpringBootServletInitializer {</span>
 
 	public static void main(String[] args) {
-<span class="nc" id="L32">		SpringApplication.run(PetClinicApplication.class, args);</span>
-<span class="nc" id="L33">	}</span>
+<span class="nc" id="L34">		SpringApplication.run(PetClinicApplication.class, args);</span>
+<span class="nc" id="L35">	}</span>
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+<span class="nc" id="L39">		return builder.sources(PetClinicApplication.class);</span>
+	}
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
